@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgb(231, 236, 236);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-weight: 400
+  ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 400px;
+  min-height: 80vh;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 60px 40px;
+  border-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.line {
+  border-bottom: 1px solid rgb(134, 133, 133);
+}
+
+.shoppingList {
+  margin-top: 40px;
+}
+
+.shoppingList_item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn, input  {
+  padding: 10px 20px;
+  flex: 1;
+  font-family: "Inter", sans-serif;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, .125);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover {
+  cursor: pointer;
+}
+
+input:focus {
+  border: 1px solid #1670BE;
+  box-shadow: 0 0 3px #1670BE;
+  outline-offset: 0px;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  border-radius: 5px;
+  flex: 1;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+li {
+  background-color: #dde8f1;
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+  padding: 5px 10px;
+}
+
+.done {
+  text-decoration: line-through;
+  background-color: #daf0bf;
+}
+
+.check_mark {
+  margin-right: 8px;
 }
